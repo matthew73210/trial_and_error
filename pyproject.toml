@@ -1,11 +1,11 @@
 [tool.poetry]
 name = "trial_and_error"
 version = "0.1.0"
-description = ""
+description = "A simple project used to teach myself how to use Django. While looking at some datasets."
 authors = ["Matthew Maxwell-Burton <matthewmaxwellburton@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-repository = ""
+repository = "https://github.com/matthew73210/trial_and_error"
 keywords = ["python", "Django", "poetry"]
 
 [tool.poetry.dependencies]
