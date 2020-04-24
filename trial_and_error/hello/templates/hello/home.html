@@ -1,24 +1,43 @@
+{% load static %}
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>A trial and error app first try</title>
         <meta name="description" content="Noy much">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/hello.css' %}">
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+        <div class="page-header">
+            <h1><a href="/">A test app</a></h1>
+        </div>
 
-        <p>Hi there!</p>
-        <p>It works!</p>
-        
+        <div>
+            <p class="intro">Hello there!</p>
+            <p>It works!</p>
+        </div>
+
+        <div>
+            <p>Here's some data</p>
+            {{ people }}
+            <p>Just prints the query, lets add a loop</p>
+
+            {% for introduction in people %}
+                {{ introduction }}
+            {% endfor %}
+        </div>
+        <p>Lets try something else</p>
+        {% for introduction in people %}
+            <div>
+                <p>Created: {{ introduction.created_date }}</p>
+                <h2><a href="">{{ introduction.name }}</a></h2>
+                <p>{{ linebreaksbr }}</p>
+            </div>
+        {% endfor %}
         <script src="" async defer></script>
     </body>
 </html>

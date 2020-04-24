@@ -1,0 +1,18 @@
+h1 a, h2 a {
+    color: #C25100;
+}
+
+body {
+    padding-left: 50px;
+}
+
+.intro {
+    font-weight: bold;
+    color: #14AA49;
+    }
+
+.page-header {
+    background-color: rgb(22, 12, 21);
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
