@@ -5,5 +5,5 @@ from . import views
 # Not to be confused with the urls.py in the project folder
 
 urlpatterns = [
-    path("", views.home, name="home"),
+    path("", views.home, name="home"), # here we have assigned views.home to root url
 ]

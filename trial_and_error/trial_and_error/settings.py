@@ -61,6 +61,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'hello.apps.HelloConfig', #Once an app is created it needs to be added. calling rhe class HelloConfig from apps.py in hello dir
 ]
 
 MIDDLEWARE = [

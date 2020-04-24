@@ -5,4 +5,4 @@ from django.http import HttpResponse
 # Where views are created for the hello app
 
 def home(requests):
-    return HttpResponse("Hello, this is a simmple introduction")
+    return render(requests, 'hello/home.html', {}) # Be carefull with path here, dont need hello/templates/hel..
