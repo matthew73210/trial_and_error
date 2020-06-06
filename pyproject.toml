@@ -10,7 +10,7 @@ keywords = ["python", "Django", "poetry"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-Django = "^3.0.5"
+Django = "^3.0.7"
 pandas = "^1.0.3"
 scipy = "^1.4.1"
 requests = "^2.23.0"
